@@ -39,16 +39,6 @@ class TreinoDetalhadoPage extends StatelessWidget {
             ),
 
             const SizedBox(height: 12),
-
-            SizedBox(
-              width: double.infinity,
-              child: ElevatedButton(
-                onPressed: () {
-                  // Aqui depois vamos navegar para a StartWorkoutPage
-                },
-                child: const Text("Iniciar treino"),
-              ),
-            )
           ],
         ),
       ),
@@ -73,7 +63,6 @@ class _ExercicioCard extends StatelessWidget {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            //Imagem estática temporária
             ClipRRect(
               borderRadius: BorderRadius.circular(8),
               child: Container(

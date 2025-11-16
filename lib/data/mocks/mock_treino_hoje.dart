@@ -1,18 +1,6 @@
-/*final Map<String, dynamic> mockTreinoHoje = {
-  'titulo': 'Treino A - Peito e Tríceps',
-  'exercicios': [
-    {'nome': 'Supino reto', 'series': 4, 'reps': 10},
-    {'nome': 'Crossover', 'series': 3, 'reps': 12},
-    {'nome': 'Tríceps corda', 'series': 4, 'reps': 10},
-  ],
-};*/
-
-// lib/features/treino/data/mock_treino_hoje.dart
-
 import 'package:gym/domain/models/exercicio.dart';
 import 'package:gym/domain/models/treino.dart';
 
-// Exemplo de mock tipado usando os modelos
 final Treino mockTreinoHoje = Treino(
   titulo: 'Treino A - Peito e Tríceps',
   descricao: 'Teste',

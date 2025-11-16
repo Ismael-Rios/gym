@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../widgets/treino_hoje.dart';
 import '../widgets/semana.dart';
 import 'package:gym/data/mocks/mock_semana.dart';
+import 'package:gym/data/mocks/mock_usuario.dart';
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});
@@ -10,8 +11,7 @@ class DashboardScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Meu Treino'),
-        centerTitle: true,
+        title: Text('Olá, ${mockUsuario.nome}'),
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../widgets/treino_hoje.dart';
 import '../widgets/semana.dart';
-import '../../data/mock_semana.dart';
+import 'package:gym/data/mocks/mock_semana.dart';
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});

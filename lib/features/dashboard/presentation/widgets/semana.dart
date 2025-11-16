@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:gym/domain/models/dia_semana.dart';
 
 class SectionSemana extends StatelessWidget {
-  final List<Map<String, dynamic>> semana;
+  final List<DiaSemana> semana;
 
   const SectionSemana({super.key, required this.semana});
 
@@ -29,7 +30,8 @@ class SectionSemana extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: semana.map((dia) {
-                final treino = dia['treino'] as String?;
+                final treino = dia.treino;
+
                 return Column(
                   children: [
                     CircleAvatar(
@@ -46,7 +48,7 @@ class SectionSemana extends StatelessWidget {
                           : const Icon(Icons.remove, color: Colors.white70, size: 16),
                     ),
                     const SizedBox(height: 6),
-                    Text(dia['dia'] as String),
+                    Text(dia.dia),
                   ],
                 );
               }).toList(),

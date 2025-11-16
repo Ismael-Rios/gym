@@ -1,7 +1,7 @@
-// lib/features/dashboard/presentation/widgets/treino_hoje.dart
 import 'package:flutter/material.dart';
 import 'package:gym/data/mocks/mock_treino_hoje.dart';
 import 'package:gym/domain/models/exercicio.dart';
+import 'package:gym/features/treino/presentation/pages/treino_detalhado_page.dart';
 
 class SectionTreinoHoje extends StatelessWidget {
   const SectionTreinoHoje({super.key});
@@ -38,7 +38,14 @@ class SectionTreinoHoje extends StatelessWidget {
                     trailing: const Icon(Icons.check_circle_outline),
                     // você pode mostrar peso/descanso ao clicar — por enquanto só visual
                     onTap: () {
-                      // opcional: abrir TreinoDetalhadoPage com esse exercício selecionado
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => TreinoDetalhadoPage(
+                            treino: mockTreinoHoje,
+                          ),
+                        ),
+                      );
                     },
                   ),
                 )),

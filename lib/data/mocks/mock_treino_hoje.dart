@@ -15,12 +15,13 @@ import 'package:gym/domain/models/treino.dart';
 // Exemplo de mock tipado usando os modelos
 final Treino mockTreinoHoje = Treino(
   titulo: 'Treino A - Peito e Tríceps',
+  descricao: 'Teste',
   exercicios: [
     Exercicio(
       nome: 'Supino reto',
       series: 4,
       reps: 10,
-      descansoSegundos: 90,
+      descanso: 90,
       pesoKg: 60,
       descricao: 'Deite, pegue a barra com pegada média e execute o movimento controlado.',
       //gifAsset: 'assets/gifs/supino_reto.gif',
@@ -29,7 +30,7 @@ final Treino mockTreinoHoje = Treino(
       nome: 'Crossover',
       series: 3,
       reps: 12,
-      descansoSegundos: 60,
+      descanso: 60,
       descricao: 'Abra o peitoral ‘fechando’ com os cotovelos levemente flexionados.',
       //gifAsset: 'assets/gifs/crossover.gif',
     ),
@@ -37,7 +38,7 @@ final Treino mockTreinoHoje = Treino(
       nome: 'Tríceps corda',
       series: 4,
       reps: 10,
-      descansoSegundos: 60,
+      descanso: 60,
       pesoKg: 20,
       descricao: 'Puxe com os cotovelos fixos ao lado do tronco.',
       //gifAsset: 'assets/gifs/triceps_corda.gif',
